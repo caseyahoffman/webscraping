@@ -17,11 +17,11 @@ class UltaSpider(Spider):
             rating = row.xpath('./a/label/text()').extract_first()
             product_url = row.xpath('./a/@href').extract_first()
 
-        # initialize UltaItem instance for each movie
-        item = UltaItem()
-        item['product'] = product
-        item['brand'] = brand
-        item['rating'] = rating
-        item['product_url'] = product_url
+            # initialize UltaItem instance for each movie
+            item = UltaItem()
+            item['product'] = product
+            item['brand'] = brand
+            item['rating'] = rating
+            item['product_url'] = product_url
 
-        yield item
+            yield item

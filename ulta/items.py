@@ -13,11 +13,3 @@ class UltaItem(scrapy.Item):
     brand = scrapy.Field()     # brand name
     rating = scrapy.Field()
     product_url = scrapy.Field()     # product's individual URL
-
-
-    item = UltaItem()
-
-    item['product'] = product
-    item['brand'] = brand
-    item['rating'] = rating
-    item['product_url'] = product_url
