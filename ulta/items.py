@@ -11,5 +11,7 @@ class UltaItem(scrapy.Item):
     # name = scrapy.Field()
     product = scrapy.Field()    # product name
     brand = scrapy.Field()     # brand name
-    rating = scrapy.Field()
+    avg_review = scrapy.Field()
+    n_review = scrapy.Field() # number of reviews
+    price = scrapy.Field()
     product_url = scrapy.Field()     # product's individual URL
